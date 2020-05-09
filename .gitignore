@@ -1,0 +1,42 @@
+# Ignore temporary files (left by editors and OS)
+*~
+*.bak
+*.swp
+.DS_Store
+#
+# Ignore by common IDEs used directories/files
+nbproject
+*.idea
+*.project
+.buildpath
+.settings
+.TemporaryItems
+.webprj
+#
+# Temporary files and folders
+.cache
+.php_cs.cache
+.sass-cache
+.session
+*.log
+#
+# Ignore common TYPO3 CMS files/directories
+/.env
+/Configuration
+/public/fileadmin
+/public/fromscratch/dist
+/public/index.php
+/public/typo3
+/public/typo3conf/ENABLE_INSTALL_TOOL
+/public/typo3conf/ext/*
+!/public/typo3conf/ext/icti_merfinsa
+!/public/typo3conf/ext/icti_properties
+/public/typo3conf/PackageStates.php
+/public/typo3temp
+/public/uploads
+/var/*
+!/var/labels
+/vendor
+
+
+

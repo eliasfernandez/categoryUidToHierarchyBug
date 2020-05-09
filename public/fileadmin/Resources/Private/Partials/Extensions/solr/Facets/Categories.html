@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:s="http://typo3.org/ns/ApacheSolrForTypo3/Solr/ViewHelpers"
+      data-namespace-typo3-fluid="true"
+>
+
+
+<p class="dropdown__title dropdown__toggle">
+    <span class="dropdown-title__text">{facet.label}</span>
+</p>
+<div class="dropdown__list-container">
+    <f:if condition="{facet.childNodes}">
+        <f:for each="{facet.childNodes}" as="childNode">
+            <f:render section="hierarchyTree" arguments="{node: childNode.childNodes, facet: facet}" />
+        </f:for>
+    </f:if>
+</div>
+
+
+<f:section name="hierarchyTree">
+    <ul class="dropdown__list">
+        <f:for each="{node}" as="childNode">
+            <li class="dropdown__option">
+                <label class="dropdown__label">
+                    <a href="{s:uri.facet.addFacetItem(facet: facet, facetItem: childNode)}" rel="nofollow">
+                        <f:cObject typoscriptObjectPath="lib.solr.categoryTitle">{childNode.label}</f:cObject>
+                    </a> (<span class="dropdown__count">{childNode.documentCount}</span>)
+                </label>
+            </li>
+        </f:for>
+    </ul>
+</f:section>
+</html>

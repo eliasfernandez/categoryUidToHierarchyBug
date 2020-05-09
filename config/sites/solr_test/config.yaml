@@ -1,0 +1,25 @@
+base: 'http://solr.ddev.site/'
+baseVariants: {  }
+errorHandling: {  }
+languages:
+  -
+    title: English
+    enabled: true
+    base: /
+    typo3Language: default
+    locale: en_GB
+    iso-639-1: en
+    navigationTitle: ''
+    hreflang: ''
+    direction: ''
+    flag: global
+    solr_core_read: core_en
+    languageId: '0'
+rootPageId: 1
+routes: {  }
+solr_enabled_read: true
+solr_host_read: solr
+solr_path_read: /solr/
+solr_port_read: 8983
+solr_scheme_read: http
+solr_use_write_connection: false

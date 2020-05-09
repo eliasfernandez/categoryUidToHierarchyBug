@@ -1,0 +1,10 @@
+{
+    "require": {
+        "typo3/minimal": "~9.5.0",
+        "typo3/cms-fluid-styled-content": "~9.5.0",
+        "typo3/cms-tstemplate": "~9.5.0",
+        "apache-solr-for-typo3/solr": "~9.0.0",
+        "georgringer/news": "~8.1.0",
+        "typo3/cms-impexp": "~9.5.0"
+    }
+}
